@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Central de informações - Acesse seus benefícios e guias rápidos do Brasil Mar">
+    <meta name="keywords" content="benefícios, guias rápidos, Brasil Mar, SulAmérica, Seguro de Vida, Seguro Residencial, Medicina em Tela">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Central de Informações - Brasil Mar</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Central de Informações - Brasil Mar</h1>
+    </header>
+    
+    <section id="produtos" data-aos="fade-up">
+        <h2>Nossos Produtos</h2>
+        <div class="card-container">
+            <!-- Card Produto 1 -->
+            <div class="card" data-aos="fade-up">
+                <div class="card-body">
+                    <i class="fas fa-tooth"></i>
+                    <h5>SulAmérica Odonto</h5>
+                    <p>Descrição do produto odontológico SulAmérica.</p>
+                    <button onclick="abrirModal('guia-odonto.pdf')" aria-label="Baixar Guia SulAmérica Odonto">Baixar Guia</button>
+                </div>
+            </div>
+            <!-- Card Produto 2 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-body">
+                    <i class="fas fa-heartbeat"></i>
+                    <h5>Seguro de Vida</h5>
+                    <p>Informações sobre o Seguro de Vida.</p>
+                    <button onclick="abrirModal('guia-vida.pdf')" aria-label="Baixar Guia Seguro de Vida">Baixar Guia</button>
+                </div>
+            </div>
+            <!-- Card Produto 3 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-body">
+                    <i class="fas fa-home"></i>
+                    <h5>Seguro Residencial</h5>
+                    <p>Proteja seu patrimônio com o Seguro Residencial.</p>
+                    <button onclick="abrirModal('guia-residencial.pdf')" aria-label="Baixar Guia Seguro Residencial">Baixar Guia</button>
+                </div>
+            </div>
+            <!-- Card Produto 4 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-body">
+                    <i class="fas fa-tablets"></i>
+                    <h5>Rede de Desconto em Farmácias</h5>
+                    <p>Descontos em medicamentos e produtos de farmácia.</p>
+                    <button onclick="abrirModal('guia-farmacia.pdf')" aria-label="Baixar Guia Rede de Desconto em Farmácias">Baixar Guia</button>
+                </div>
+            </div>
+            <!-- Card Produto 5 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-body">
+                    <i class="fas fa-stethoscope"></i>
+                    <h5>Medicina em Tela SulAmérica</h5>
+                    <p>Consultas médicas online com praticidade e segurança.</p>
+                    <button onclick="abrirModal('guia-telemedicina.pdf')" aria-label="Baixar Guia Medicina em Tela SulAmérica">Baixar Guia</button>
+                </div>
+            </div>
+            <!-- Card Produto 6 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-body">
+                    <i class="fas fa-baby"></i>
+                    <h5>Cesta Natalidade</h5>
+                    <p>É a chegada de um bebê, e não podemos deixar a familia de mãos abertas, certo?</p>
+                    <button onclick="abrirModal('guia-natalidade.pdf')" aria-label="Baixar Guia Cesta Natalidade">Baixar Guia</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" data-aos="fade-up">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        <div class="faq-section">
+            <h3>Qual é a data de corte para inclusão e exclusão de funcionários?</h3>
+            <p>O responsável da empresa pode utilizar o Portal da Brasil Mar para realizar inclusões, exclusões e alterações de colaboradores conforme as datas de corte disponíveis na aba "Movimentações".</p>
+            <ul>
+                <li>As adesões ou exclusões realizadas até o dia 25 de cada mês terão seus cartões e serviços ativos a partir do dia 01 do mês subsequente, incluindo as exclusões.</li>
+                <li>As adesões ou exclusões efetuadas após a data de corte serão cobradas no vencimento do mês subsequente.</li>
+            </ul>
+            <p>Exemplo:</p>
+            <ul>
+                <li>Colaborador incluído até o dia 25/08/2022 terá ativação em 01/09/2022.</li>
+                <li>Colaborador incluído no dia 26/08/2022 terá ativação em 01/10/2022.</li>
+            </ul>
+
+            <h3>Como faço para receber os boletos? Recebo por e-mail?</h3>
+            <p>Os boletos bancários são enviados mensalmente para o e-mail registrado da empresa contratante a partir do segundo dia útil de cada mês. Além disso, a empresa pode acessar o portal para exportar o boleto bancário e visualizar os detalhes da fatura.</p>
+            <p>Para visualizar o histórico financeiro da sua empresa, acesse a aba “Financeiro”, onde você encontrará todos os boletos emitidos, além de acesso aos detalhes das cobranças.</p>
+
+            <h3>Quando os boletos ficam disponíveis no site?</h3>
+            <p>Os boletos ficam disponíveis a partir do segundo dia útil de cada mês.</p>
+
+            <h3>Passei da data de corte, posso realizar alterações nos funcionários ainda?</h3>
+            <p>Você pode realizar movimentações de inclusões, exclusões e alterações a qualquer momento, respeitando a data de corte.</p>
+            <p>Exemplo:</p>
+            <ul>
+                <li>Colaborador incluído até o dia 25/08/2022 terá ativação em 01/09/2022.</li>
+                <li>Colaborador incluído no dia 26/08/2022 terá ativação em 01/10/2022.</li>
+            </ul>
+
+            <h3>Como gerar um relatório de funcionários e dependentes?</h3>
+            <p>No menu "Movimentações", você encontrará opções para exportar o Relatório de Colaboradores Ativos com os dados detalhados do titular.</p>
+            <p>No menu "Dependentes", você pode exportar o Relatório de Dependentes de Colaboradores Ativos com os dados do titular e seus respectivos dependentes para lançamento de desconto na folha de pagamento dos colaboradores.</p>
+
+            <h3>Como acessar os benefícios disponíveis para os colaboradores através da Brasil Mar?</h3>
+            <p>A Brasil Mar disponibiliza manuais de acesso aos portais e aplicativos dos prestadores de serviço para facilitar o acesso dos colaboradores e seus dependentes aos serviços intermediados. Esses manuais são enviados para os e-mails da empresa contratante. Além disso, temos um canal de atendimento ativo para dar suporte aos colaboradores através dos contatos:</p>
+            <ul>
+                <li>E-mail: contato@brasilmargestao.com</li>
+                <li>WhatsApp: (81) 9 9959-2511</li>
+            </ul>
+
+            <h3>Minha empresa deseja se cadastrar, como faço?</h3>
+            <p>Caso seus colaboradores e empresa estejam vinculados às categorias que firmaram parceria com os projetos da Brasil Mar, você pode se cadastrar através do nosso portal pelo link: <a href="https://brasilmargestao.com/cadastro" target="_blank">Cadastro Brasil Mar</a>. Assim que preencher o cadastro, nossa equipe validará os dados e entrará em contato para prosseguir com o cadastro da sua empresa e colaboradores.</p>
+
+            <div class="faq-download">
+                <a id="faq-download-btn" href="#" aria-label="Baixar FAQ">Baixar FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer atualizado -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 <a href="https://brasilmargestao.com/">Brasil Mar</a>. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://github.com/rxmainless">Jorge Mesquita</a></p>
+            <div class="footer-info">
+                <p><strong>Endereço:</strong> Av. Frei Matias Teves, 285, Ilha do Leite, Recife - PE, 50070-465</p>
+                <p><strong>Telefone:</strong> (81) 9959-2511</p>
+                <p><strong>Email:</strong> Brasimargestao@gmail.com</p>
+                <p><strong>Site:</strong> <a href="https://brasilmargestao.com/" target="_blank">www.brasilmar.com</a></p>
+            </div>
+            <!-- Adicionando ícones de redes sociais -->
+            <div class="social-icons">
+                <a href="https://web.facebook.com/brasilmargestao?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        function abrirModal(guia) {
+            window.open(guia, '_blank');
+        }
+    </script>
+</body>
+</html>
